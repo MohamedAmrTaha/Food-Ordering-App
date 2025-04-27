@@ -1,0 +1,27 @@
+.modal {
+  width: 90%;
+  max-width: 30rem;
+  margin: auto;
+  padding: 2rem;
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  animation: fade-slide-down 300ms ease-out forwards;
+  overflow: hidden;
+}
+
+.modal::backdrop {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+@keyframes fade-slide-down {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
